@@ -1,0 +1,788 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <meta charset="UTF-8"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>MEGLADON HOTEL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@600;700&family=Poppins:ital,wght@0,500;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.1/css/all.min.css">
+    
+   <style>
+     *{
+       font-family: 'Poppins', sans-serif;
+     }
+     .h-font{
+        font-family: 'Merienda', cursive;
+     }
+
+     .custom-bg{
+      background-color: #279;
+     }
+     .custom-bg:hover{
+      background-color: #279;
+     }
+
+     @media screen and (max-width: 575px) {
+      .avilability-form{
+        margin-top: 25px;
+        padding: 0 35px;
+      }
+     }
+    </style>
+    <style>
+      body{
+        background:linear-gradient(rgba(0, 46, 57, 0.767),rgba(103, 103, 103, 0.41));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .icon{
+        border: 1px solid;
+    border-color: red;
+    width: 40px;
+    height: 40px;
+    border-radius:10px;
+      position:sticky;
+    animation: 3s linear 0s running infinite hello;
+      }
+      .icon:hover{
+        border-color:aqua;
+        width: 100px;
+    height: 100px;
+    border-radius:50px;
+      }
+      #Hi{
+    border: 2px greenyellow;
+    width: 250px;
+    height: 250px;
+    animation: 3s linear 0s running infinite hello;
+}
+
+
+
+@keyframes hello{
+    10%{border-color:red;}
+    20%{border-color:rgb(3, 218, 3);}
+    30%{border-color: yellow;}
+    40%{border-color:purple;}
+    50%{border-color:lightblue;}
+    60%{border-color:rgb(128, 0, 124);}
+
+}
+    </style>
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}"> -->
+</head>
+
+
+
+<body class="bg-light">
+  
+  <div class=  "container-fluid">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
+      
+      
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <img class="icon" src="images/icon/1.png" alt="icon-image">
+          
+          <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.php">MEGLADON HOTEL</a>
+    
+          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <li class="nav-item">
+            <a class="nav-link active me-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#">Facilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#">About</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#LoginModel">
+            Login
+          </button>
+          <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModel">
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+      
+      
+      
+      <div class="modal fade" id="LoginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <form>       
+               <div class="modal-header">   
+                 <h5 class="modal-title d-flex align-items-center">
+                    <i class="bi bi-person-circle fs-3 me-2"></i> User Login
+                  </h5>
+                  <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                 <div class="mb-3">
+                   <label class="form-label">Password</label>
+                   <input type="password" class="form-control shadow-none">
+               </div>
+               <div class="mb-3">
+                   <label class="form-label">Email</label>
+                   <input type="email" class="form-control shadow-none">
+               </div>
+               <div class="d-flex align-items-center justify-content-between mb-2">
+                   <button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+                   <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot Password?</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div> 
+     
+      <div class="modal fade" id="registerModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+           <div class="modal-content">
+             <form>       
+               <div class="modal-header">   
+                 <h5 class="modal-title d-flex align-items-center">
+                   <i class="bi bi-person-lines-fill fs-3 me-2"></i> User Registration
+                  </h5>
+                  <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+               <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
+                  NB: Your details must match your ID(passport,driving linces,etc)
+                   these are required during check-in. 
+              </span>
+              <div class="container-fluid"> 
+                <div class="row">
+                  <div class="col-md-6 ps-0 mb-3">
+                    <label class="form-lable">Name</label>
+                    <input type="text" class="form-control shadow-none">
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <label class="form-lable">Email</label>
+                    <input type="email" class="form-control shadow-none">
+                  </div>
+                  <div class="col-md-6 ps-0 mb-3">
+                    <label class="form-lable">Phone number</label>
+                    <input type="number" class="form-control shadow-none">
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <label class="form-lable">Picture</label>
+                    <input type="file" class="form-control shadow-none">
+                  </div>
+                  <div class="col-md-6 ps-0 mb-3">
+                      <label class="form-lable">Password</label>
+                      <input type="password" class="form-control shadow-none">
+                  </div>
+                  <div class="col-md-6 p-0 mb-3">
+                      <label class="form-lable">Confirm Password</label>
+                      <input type="password" class="form-control shadow-none">
+                  </div>
+                </div>
+              </div>
+              <div class="text-center my-1">
+                <button type="submite" class="btn btn-dark shadow-none">REGISTER</button>        </div>
+               <!-- <div class="mb-3">
+                  <lable class="form-lable">Email address</lable>
+                  <input type="email" class=" form-control shadow-none">
+               </div>
+               <div class="mb=4">
+              <lable class="form-lable">Password</lable>
+              <input type="password" class="form-control shadow-none">
+               </div>
+              <div class="d-flex aign-items-center justify-content-between mb-2">
+      
+                  <a href="javascript: void(0)" class="tex-secondary text-decoration-none">Forgot Password
+              </div> -->
+               </div>
+             </form>
+           </div>
+         </div>
+      </div>
+
+      <!--pic-->
+      
+      <div class="container-fluid px-lg-4 mt-4">
+        <div class="swiper swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/pic/4.jpg" height="500" class="w-100 d-block">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/pic/6.jpg" height="500" class="w-100 d-block">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/pic/2.jpg" height="500" class="w-100 d-block">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/pic/8.jpg" height="500" class="w-100 d-block">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/pic/1.jpg" height="500" class="w-100 d-block">
+            </div>
+          </div>
+          <div class="swiper-button-hidden"></div>
+          <div class="swiper-button-hidden"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>     
+
+<!--availability of rooms-->
+
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-12 bg-light shadow p-4 rounded">
+          <h5 class="mb-4"> Booking </h5>
+          <form>
+            <div class="row align-items-end">
+              <div class="col-lg-3">
+                <lable class="form-label" style="font-weight: 600;">Check-in</lable>
+                <input type="date" class="form-control shadow-none">
+              </div>
+                <div class="col-lg-3">
+                  <lable class="form-label" style="font-weight: 600;">Check-out</lable>
+                  <input type="date" class="form-control shadow-none">
+                </div>
+                  <div class="col-lg-3"> 
+                  <label class="form-label" style="font-weight: 600;">Adult</label>
+                  <select class="form-select shadow-none">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                  </div>
+                  <div class="col-lg-3"> 
+                    <label class="form-label" style="font-weight: 600;">Children</label>
+                    <select class="form-select shadow-none">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3">
+                    <lable class="form-label" style="font-weight: 600;">Rooms</lable>
+                    <input type="number" class="form-control shadow-none">
+                  </div>
+                  <div class="col-lg-3">
+                    <label class="form-label" style="font-weight: 600;"></label>
+                    <button type="submit" class="btn text-white shadow-none custom-bg">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+<!--rooms-->
+
+<h2 class="mt-5 pt-4 mb-4 text-lg-center fw-bold h-font">ROOMS</h2>
+
+<div class="container">
+  <div class="row ">
+    <div class="col-lg-4 col-md-6 my-3">
+                  <div class="card border-0 shadow" style="max-width: 300px; margin: auto;">
+                    <img src="images/rooms/4.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5>BASIC ROOMS</h5>
+                      <h6 class="mb-4">1500 per night</h6>
+                      <div class="features mb-4">
+                        <h6 class="mb-1">Features</h6>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Unique Decor.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Stunning view.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Free wifi.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Spacious bathrooms.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Quiet Atmosphere.
+                        </span>
+                      </div>
+                      <div class="rating mb-4">
+                        <h6 class="mb-1">Rating</h6>
+                        <span class="badge rounded-pill bg-light">
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-half text-warning"></i>
+                        </span>
+                      </div>
+                      <div class="d-flex justify-content-evenly mb-2">
+                      <a href="#" class="btn btn-primary">Book now</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              <div class="col-lg-4 col-md-6 my-3">
+                  <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
+                    <img src="images/rooms/2.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5>DELUX ROOMS </h5>
+                      <h6 class="mb-4">3500 per night</h6>
+                      <div class="features mb-4">
+                        <h6 class="mb-1">Features</h6>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Room service.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Unique Decor.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Stunning view.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Free wifi.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Spacious bathrooms.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          In room coffee makers.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Flat-screen tv.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Quiet Atmosphere.
+                        </span>
+                      </div>
+                      <div class="rating mb-4">
+                        <h6 class="mb-1">Rating</h6>
+                        <span class="badge rounded-pill bg-light">
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                        </span>
+                      </div>
+                      <div class="d-flex justify-content-evenly mb-2">
+                      <a href="#" class="btn btn-primary">Book now</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              <div class="col-lg-4 col-md-6 my-3">
+                  <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
+                    <img src="images/rooms/3.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5>VIP ROOMS</h5>
+                      <h6 class="mb-4">5000 per night</h6>
+                      <div class="features mb-4">
+                        <h6 class="mb-1">Features</h6>
+                        <span  class="badge rounded-pill bg-light text-dark text-wrap">
+                          2 Rooms
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Room service.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Unique Decor.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Stunning view.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Free wifi.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Spacious bathrooms.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          In room coffee makers.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Flat-screen tv.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Minibars.
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark text-wrap">
+                          Quiet Atmosphere.
+                        </span>
+                      </div>
+                      <div class="rating mb-4">
+                        <h6 class="mb-1">Rating</h6>
+                        <span class="badge rounded-pill bg-light">
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                        </span>
+                      </div>
+                      <div class="d-flex justify-content-evenly mb-2">
+                      <a href="#" class="btn btn-primary">Book now</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+              <br><br><br>
+
+<!--facilities-->
+
+<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">Facilities</h2>
+
+<div class="container">
+  <div class="row justify-content-md-evenly px-md-0 px-5">
+    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+      <img src="images/facilities/1.jpg" width="80px">
+      <h5 class="mt-3">WiFi</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+      <img src="images/facilities/11.jpg" width="80px">
+      <h5 class="mt-3">Reviews</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+      <img src="images/facilities/2.jpg" width="80px">
+      <h5 class="mt-3">Restaurant</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+      <img src="images/facilities/5.jpg" width="80px">
+      <h5 class="mt-3">Accomodation</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+      <img src="images/facilities/4.jpg" width="80px">
+      <h5 class="mt-3">Pool</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+      <img src="images/facilities/8.jpg" width="80px">
+      <h5 class="mt-3">Confrence Rooms</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+      <img src="images/facilities/6.jpg" width="80px">
+      <h5 class="mt-3">Bar</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+      <img src="images/facilities/7.jpg" width="80px">
+      <h5 class="mt-3">Event Space</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+      <img src="images/facilities/3.jpg" width="80px">
+      <h5 class="mt-3">Ample Parking</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+      <img src="images/facilities/10.jpg" width="80px">
+      <h5 class="mt-3">Jacuzzy</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+      <img src="images/facilities/9.jpg" width="80px">
+      <h5 class="mt-3">Spa</h5>
+    </div>
+
+  </div>
+</div>
+
+
+<!--Reviews-->
+
+<h2 class="mt-5 pt4 mb-4 text-center fw-bold h-font">REVIEWS</h2>
+
+<div class="container">
+  <div class="swiper swiper-reviews">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide bg-white p-4">
+        <div class="profile d-flex align-items-center mb-3">
+          <img src="images/review/3.jpg" width="50px">
+          <h6 class="m-0 ms-2">Daniel Amani</h6>
+        </div>
+        <p>
+      "The Megladon Hotel truly lives up to its name. 
+      From the moment I stepped into the opulent lobby, I was treated with the utmost respect and hospitality. 
+      The rooms are beautifully furnished, offering comfort and luxury. 
+      The staff is attentive and professional, always ready to assist. 
+      The on-site restaurant offers a variety of delicious meals. 
+      A truly grand experience!"
+        </p>
+         <div class="rating">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+        </div>
+        </div>
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile d-flex align-items-center mb-3">
+            <img src="images/review/7.jpg" width="50px">
+            <h6  class="m-0 ms-2">Victoria</h6>
+          </div>
+          <p>
+           "Megladon hotel is the perfect getaway for nature lovers.
+            Nestled in the heart of the mountains, the views are simply spectacular. 
+            The rooms are cozy and well-equipped, and the staff is friendly and helpful. 
+            The hiking trails nearby offer an adventurous day out. 
+            A peaceful retreat in the lap of nature."
+          </p>
+          <div class="rating">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-half text-warning"></i>
+          </div>
+          </div>
+          <div class="swiper-slide bg-white p-4">
+            <div class="profile d-flex align-items-center mb-3">
+              <img src="images/review/4.jpg" width="50px">
+              <h6  class="m-0 ms-2">Shalom Kazira</h6>
+            </div>
+            <p> 
+             "Megladon Hotel is ideal for urban explorers. 
+              Located in the heart of the city, it is just a short walk to major attractions, shopping centers, and restaurants. 
+              The rooms are modern, clean, and quiet despite the bustling city outside. 
+              The staff is knowledgeable about the area and gave great recommendations for dining and sightseeing.”
+            </p>
+            <div class="rating">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+            </div>
+            <div class="swiper-slide bg-white p-4">
+              <div class="profile d-flex align-items-center mb-3">
+                <img src="images/review/5.jpg" width="50px">
+                <h6 class="m-0 ms-2">Clarah whitney</h6>
+              </div>
+              <p>
+            "The Megladon Hotel is a paradise for beach lovers! 
+            The ocean view from my room was breathtaking, and the private beach was clean and well-maintained. 
+            The resort offers numerous water activities which kept me entertained throughout my stay. 
+            The seafood at their restaurant was fresh and cooked to perfection. 
+            Can not wait to return!”
+              </p>
+              <div class="rating">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              </div>
+              <div class="swiper-slide bg-white p-4">
+                <div class="profile d-flex align-items-center mb-3">
+                  <img src="images/review/2.jpg" width="50px">
+                  <h6 class="m-0 ms-2">Viktor Mugo</h6>
+                </div>
+                <p>
+                 "The dining experience at Megladon Hotel is nothing short of spectacular. 
+                 The menu is diverse, catering to a variety of tastes. 
+                 Each dish I tried was a symphony of flavors, beautifully presented and cooked to perfection. 
+                 The chef clearly takes pride in sourcing high-quality, fresh ingredients. 
+                 The wait staff is knowledgeable and attentive, enhancing the overall dining experience. 
+                 Whether you are a food connoisseur or simply enjoy a good meal, Megladon Hotel is a must-visit.”
+                </p>
+                <div class="rating">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                </div>
+                <div class="swiper-slide bg-white p-4">
+                  <div class="profile d-flex align-items-center mb-3">
+                    <img src="images/review/1.jpg" width="50px">
+                    <h6 class="m-0 ms-2">Esther Njau</h6>
+                  </div>
+                  <p>
+                "The Megladon Hotel  is a culinary delight! 
+                From the moment I walked in, I was greeted by the warm and inviting atmosphere. 
+                The staff was attentive and friendly, making me feel right at home. 
+                The menu offers a wide variety of dishes, each one more tempting than the last. 
+                I opted for the chefs special, a beautifully presented dish that was a feast for both the eyes and the palate. 
+                The flavors were rich and well-balanced, truly showcasing the chefs expertise. 
+                The wine list was extensive, with options to suit every taste. 
+                To top it all off, the dessert was a masterpiece, the perfect end to a perfect meal. 
+                I was tempted to prolong my vacation , but i can not wait to be back there."
+                  </p>
+                  <div class="rating">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </div>
+                  </div>
+                  <div class="swiper-slide bg-white p-4">
+                    <div class="profile d-flex align-items-center mb-3">
+                      <img src="images/review/6.jpg" width="50px">
+                      <h6 class="m-0 ms-2">Andrea Williams</h6>
+                    </div>
+                    <p>
+                   “Staying at the Megladon Hotel was an absolute pleasure. 
+                    The rooms are spacious, immaculately clean, and tastefully decorated with a keen eye for detail. 
+                    The bed was incredibly comfortable, ensuring a good night sleep after a day of sightseeing. 
+                    The hotel staff was professional and courteous, promptly addressing any requests or concerns. 
+                    The amenities provided were top-notch, adding to the overall comfort of my stay. 
+                    It is clear that guest satisfaction is a priority at Megladon Hotel.”
+                    </p>
+                    <div class="rating">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                    </div>
+       </div>                                
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!--contuct us-->
+ 
+<div class="container">
+    <div class="col-lg-4 col-md-4">
+      <div class="row">
+      <div class="bg-white p-4 rounded mb-4">
+        <h5>Call Us</h5>
+        <a href="tel: +254112172960" class="d-inline-block mb-2 text-decoration-none text-dark">
+          <i class="bi bi-telephone-fill"></i> +254112172960
+        </a>
+        <a href="tel: +254799989787" class="d-inline-block mb-2 text-decoration-none text-dark">
+          <i class="bi bi-telephone-fill"></i> +254799989787
+        </a>
+        <div class="bg-white p-4 rounded mb-4">
+          <h5>Email us</h5>
+        <a href="mailto: victormugo08@gmai.com" class="d-inline-block mb-2 text-decoration-none">
+          <span class="fas fa-envelope text-dark fs-6 p-2">
+          <i class="fas fa-envelope"></i>victormugo08@gmail.com
+          </span>
+        </a>
+      </div>
+      <div class="bg-white p-4 rounded mb-4">
+        <h5>Follow Us</h5>
+        <a href="#" class="d-inline-block">
+          <span class="badge bg-light text-dark fs-6 p-2">
+            <i class="bi bi-instagram me-1"></i>Instagram
+          </span>
+        </a>
+        <a href="instagram: nairobi.an_finesse" class="d-inline-block mb-2 text-decoration-none text-dark">
+            <i class="bi bi-instagram-fill"></i> nairobi.an_finesse
+        </a>
+        <a href="#" class="d-inline-block mb-3">
+          <span class="badge bg-light text-dark fs-6 p-2">
+            <i class="bi bi-twitter-x me-1"></i>Twitter
+          </span>
+        </a>
+        <a href="#" class="d-inline-block mb-3">
+          <span class="badge bg-light text-dark fs-6 p-2">
+            <i class="bi bi-facebook me-1"></i>Facebook
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+
+<div class="container-fluid bg-white mt-5">
+  <div class="row">
+    <div class="col-lg-4 p-4">
+      <h3 class="h-font fw-bold fs-3 mb-2">MEGLADON HOTEL</h3>
+      <p>
+        Your Comfort is our Priority.
+        Exprince Luxury in Every Detail.
+        A tatse of paradise.
+        Endulge in the Extraordinary.
+        Where Every Stay Feels Like home.
+        Escape to Exquisite.
+        Dine in Delight.
+      </p>
+   </div>
+     <div class="col-lg-4 p-4">
+      <h5 class="mb-3">Links</h5>
+      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a> <br>
+      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Rooms</a> <br>
+      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Facilities</a> <br>
+      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Contact us</a> <br>
+      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">About</a> <br>
+    </div>
+    <div class="col-lg-4 p-4">
+      <h5 class="mb-3">Follw us</h5>
+      <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
+        <i class="bi bi-instagram me-1"></i> Instagram
+      </a><br>
+      <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
+        <i class="bi bi-twitter-x me-1"></i> Twittwer
+      </a><br>
+      <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
+        <i class="bi bi-facebook me-1"></i> Facebook
+      </a><br>
+    </div>
+  </div>
+</div>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+ 
+ <script>
+        var swiper = new Swiper(".swiper-container", {
+            spaceBwtween: 30,
+            effects: "fade",
+            loop: true,
+            autoplay: {
+              delay:3500,
+              disableOnInteraction: false,
+
+            }
+           });
+
+           var swiper = new Swiper(".swiper-reviews", {
+            effects: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidePerview: "auto",
+            coverflowEffect: {
+              rotate: 50,
+              strech: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadow: true,
+            },
+            pagination: {
+              el:".swiper-pagination",
+            },
+           });
+       
+</script>
+
+</body>
+</html>
